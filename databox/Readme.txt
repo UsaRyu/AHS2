@@ -1,0 +1,1 @@
+original_data内でデータの製作を行い、それをmodel_dataに移行する。

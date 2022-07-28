@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="content">
+    <form class="frmSmpl2" action="/calc" method="POST">
+            <h1>面積を求めたい台形の情報を入力してください</h1>
+        <p>
+            <label><span>台形の上底は？</span>
+                <input type="text" name="top" class="txtfiled" placeholder="上底">
+            </label>
+        </p>
+
+        <p>
+            <label><span>台形の下底は？</span>
+                <input type="text" name="bottom" class="txtfiled" placeholder='下底'></input>
+            </label>
+        </p>
+
+        <p>
+            <label><span>台形の高さは？</span>
+                <input type="text" name="height" class="txtfiled" placeholder='高さ'></input>
+            </label>
+        </p>
+
+        <p>
+            <input type="submit" value='計算する'>
+        </p>
+    </form>
+
+    <div class="box17">
+        {% if area %}
+            <p>台形の面積は</p>
+            <h2 class="result"> {{area}}</h2>
+        {% else %}
+            <h2 class="result">{{error}}</h2>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

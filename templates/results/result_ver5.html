@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>AHS2</title>
+        <link rel="stylesheet" href="./static/css/result_style.css">
+        <link rel="icon" href="./static/images/icon.png">
+    </head>
+    <body>
+        <header>
+            <div class="header-logo">
+                <h1><a href="/"><img src="./static/images/Logo7.png" alt="Logo" width="130" height="70"> <span></span></a></h1>
+            </div>
+            <div class="header-list">
+                <ul class="header-ul">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About AHS2</a></li>
+                <li><a href="/dictionary">Dictionary</a></li>
+                </ul>
+            </div>
+        </header>
+        <section id="main-block">
+            <div class="main-container">
+                <div class="title-container">
+                    <div class="title">
+                        <!--<img src= "{{ img_path }}" style="margin: 20px; vertical-align: bottom; width: 200px;">-->
+                        <img src= "{{ img_path }}" width="456px" height="400px" class="hand_image" >
+                    </div>
+                </div>
+                <div class="right-container">
+                    <div class="info-container">
+                        <p class="info-text">
+                            <b>「{{result}}」</b>
+                        </p>
+                        (一致率{{score}}％)
+                        <p class="info-text">
+                        <span class="font-small">
+                        {{text}}
+                        </span>
+                        </p>
+                        <p>{{ref}}</p>
+                        <u><a href="/">他のハンドサインも予測してみる</a></u>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright © Ryuichi Usami All Rights Reserved.</p>
+        </footer>
+    </body>
+</html> 

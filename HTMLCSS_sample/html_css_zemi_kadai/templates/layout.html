@@ -1,0 +1,67 @@
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- ファビコン設定 -->
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <title>台形面積ツール</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+    <header>
+        <div class="logo">
+            <a href="/">台形面積ツール</a>
+        </div>
+
+        <div id="hamburger">
+            <div class="icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav class="sm">
+            <ul>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <nav class="pc">
+            <ul>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!--▽▽jQuery▽▽-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script>
+        $('#hamburger').on('click', function(){
+        $('.icon').toggleClass('close');
+        $('.sm').slideToggle();
+        });
+      </script>
+<!--△△jQuery△△-->
+
+    {% block content %}
+    {% endblock %}
+    <div>
+        <p class="html_css_image">
+            <img src="/static/images/html_css.jpeg" width="200" height="150" alt="HTML_CSS"/>
+        </p>
+    </div>
+    <footer>
+        <div class="footer_logo">©︎ GeekSalon_AI_html_cssゼミ</div>
+    </footer>
+    </div>
+  </body>
+</html> 

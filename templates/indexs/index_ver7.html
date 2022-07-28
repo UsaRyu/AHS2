@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>AHS2</title>
+        <link rel="stylesheet" href="./static/css/style.css">
+        <link rel="icon" href="./static/images/icon.png">
+    </head>
+    <body>
+        <header>
+            <div class="header-logo">
+                <h1><a href="/"><img src="./static/images/Logo7.png" alt="Logo" width="130" height="70"> <span></span></a></h1>
+            </div>
+            <div class="header-list">
+                <ul class="header-ul">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About AHS2</a></li>
+                    <li><a href="/dictionary">Dictionary</a></li>
+                </ul>
+            </div>
+        </header>
+        <ul class="sample">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <section id="main-block">
+            <div class="main-container">
+                <div class="title-container">
+                    <div class="title">
+                        <img src="./static/images/title5.png" alt="Title" width="650" height="450" >
+                    </div>
+                </div>
+                <div class="right-container">
+                    <div class="info-container">
+                        <p class="info-text">
+                            <b>AH2へようこそ！</b>
+                        </p>
+                        <p class="info-text">
+                        <span class="font-small">
+                        AHS2(Application for Hand Sign Search)は、
+                        <br>
+                        ハンドサインの画像を分析し、意味を教えてくれるアプリです。
+                        <br>
+                        画像をアップロードし、検索を始めてみましょう。
+                        </span>
+                        </p>
+                        <div class="-text">
+                        <form action = "/upload" method="post" enctype="multipart/form-data">
+                            <p><input type="file" id = "upload_file" name = "upload_file" multiple="multiple" class="form-control"></p>
+                            <p><input type="submit" value="送信" class="form-control btn btn-primary"></p>
+                            </form>
+                        </div>        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright © Ryuichi Usami All Rights Reserved.</p>
+        </footer>
+    </body>
+</html> 
+

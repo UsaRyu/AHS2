@@ -1,0 +1,219 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+
+ header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header-list li {
+    list-style: none;
+    float: left;
+    padding-top: 35px;
+    padding-right: 20px;
+    padding-bottom: 35px;
+    padding-left: 20px;
+    color: #FFF;
+    font-size: 30px;
+  }
+
+  .header-logo {
+     /*color: black;
+     font-size: 30px;*/
+     float: left;
+     padding-top: 47px;
+     padding-right: 40px;
+     padding-bottom: 30px;
+     padding-left: 40px;
+  }
+
+a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+a:hover {
+    color: #00F;
+  }
+
+#main-block {
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 55%, rgba(255,255,255,0.8) 55%,  rgba(255,255,255,0.8) 100%);
+    width: 100%;
+    height: 471px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .main-container {
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  
+  .title-container {
+    display: flex;
+    color: #FFF;/*文字色*/
+    height: 400px;
+    width: 280px;
+    background-color: rgba(255,255,255,0.3);
+    margin-top: 30px;
+    margin-right: 60px;
+    margin-bottom: 0px;
+    margin-left: 100px;
+    flex-grow: 3;
+  }
+
+  .title {
+    height: 100px;
+    width: 100px;
+    margin-left: -10px;
+  }
+
+  .right-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 530px;
+    height: 500px;
+    flex-grow: 1;
+    margin-left: 50px;
+    margin-right: 10px;
+  }
+
+  p {
+    text-align:center;
+  }
+  
+  .info-text {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  
+  .font-small {
+    font-size: 22px;
+    width: 8em
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    height: 50px;
+    background-color: #000;
+    font-size: 15px;
+    color: #fff;
+  }
+
+  .sample {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: -1;
+}
+.sample li {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    animation: anime 40s linear 0s infinite ;
+}
+.sample li:nth-child(1) { 
+    background-image: url(/static/images/BG1.jpg)
+}
+.sample li:nth-child(2) {
+    background-image: url(/static/images/BG2.jpg);
+    animation-delay: 10s;
+}
+.sample li:nth-child(3) {
+    background-image: url(/static/images/BG3.jpg);
+    animation-delay: 20s;
+}
+.sample li:nth-child(4) {
+    background-image: url(/static/images/BG4.jpg);
+    animation-delay: 30s;
+}
+.sample li:nth-child(5) { 
+  background-image: url(/static/images/BG1.jpg);
+  animation-delay: 40s;
+}
+.sample li:nth-child(6) {
+  background-image: url(/static/images/BG2.jpg);
+  animation-delay: 50s;
+}
+.sample li:nth-child(7) {
+  background-image: url(/static/images/BG3.jpg);
+  animation-delay: 60s;
+}
+.sample li:nth-child(8) {
+  background-image: url(/static/images/BG4.jpg);
+  animation-delay: 70s;
+}
+.sample li:nth-child(9) { 
+  background-image: url(/static/images/BG1.jpg);
+  animation-delay: 80s;
+}
+.sample li:nth-child(10) {
+  background-image: url(/static/images/BG2.jpg);
+  animation-delay: 90s;
+}
+.sample li:nth-child(11) {
+  background-image: url(/static/images/BG3.jpg);
+  animation-delay: 100s;
+}
+.sample li:nth-child(12) {
+  background-image: url(/static/images/BG4.jpg);
+  animation-delay: 110s;
+}
+
+@keyframes anime { 
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    40% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.3);
+        opacity: 0;
+    }
+    100% { opacity: 0 }
+}
+
+.resizeimage {
+	box-sizing: border-box;
+	width:50%;
+  background-color:#fff;
+	color: #666;
+	padding:.7em;
+	margin: 0 auto;
+	border: 3px solid rgba(115, 210, 230, 0.9);
+	border-radius: 15px;
+	}

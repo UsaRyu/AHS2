@@ -1,0 +1,1 @@
+index,layout,resultともに、ver1（初期）で動作OK
